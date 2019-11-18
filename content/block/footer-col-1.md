@@ -1,3 +1,2 @@
-#### Footer col 1
-
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+<!-- #### Footer col 1 -->
+HTML VALIDATOR: [VALIDATOR](https://validator.w3.org/)

@@ -1,25 +1,45 @@
 ---
 title: "Min fina titel"
+views:
+    kursrepo:
+        region: sidebar-right
+        template: anax/v2/block/default
+        data:
+            meta:
+                type: single
+                route: block/om-kursrepo
+    flash:
+        region: flash
+        template: anax/v2/image/default
+        data:
+            src: "image/flashimg.jpg?width=1100&height=180&crop-to-fit"
+    Byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
 ---
-Min me-sida i kursen design
+Idrees Safi | Design
 =========================
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/indeximg.jpg?w=500" class="right" caption="Idrees och Åfelia"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Jag heter Idrees Safi och kommer ursprungligen från Kabul, Afghanistan.
+Jag är 24 år gammal, bor i fina Karlskrona tillsammans med min storebror, flyttade hit
+i augusti och trivs här jättebra i den här lilla staden.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Jag studerar Webbprogrammering vid Blekinge Tekniska Högskola.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+På fritiden gillar att spela fotboll, träna på gym, bada och laga mat.
+Jag kom till Sverige för 8 år sedan, sedan dess har jag bott i olika städer.
+Först bodde jag och min familj i malmö och sedan flyttade vi till Lammhult som är en liten by
+utanför växjö.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+Lammhult är en liten by som ligger 40 minuter utanför Växjö och där lärde jag mig det svenska språket.
+Efter några månader så flyttade vi till Sölvesborg som ligger i bleklinge och där valde jag teknikprogrammet på gymnasiet.
+Just nu bor resterande av min familj tillsammans i Kristianstad.
