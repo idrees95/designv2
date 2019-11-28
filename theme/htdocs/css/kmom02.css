@@ -1,9 +1,13 @@
 /*!
- * LESS version of the stylesheet for design kmom01.
+ * LESS version of the stylesheet for design kmom02.
  *
- * This stylesheet is for the design course and kmom01. Its intention is to
+ * This stylesheet is for the design course and kmom02. Its intention is to
  * use kmom01.css and lessify the style and use this as a wrapper for the new
  * style.
+ */
+/**
+ * A small clearfix:
+ * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
  */
 /**
   * Normalize and reset the style.
@@ -313,17 +317,6 @@ template {
 [hidden] {
   display: none;
 }
-/**
- * Internal self contained modules, save in directory module/.
- */
-/*!
- * Stylesheet for design kmom01.
- *
- * This stylesheet is for the design course and kmom01. Fill it with style
- * to style up the website so it is useable.
- */
-/* margin-top: -10em; */
-/* margin-left: 10em; */
 /**
  * Font Awesome.
  */
@@ -4738,176 +4731,49 @@ template {
   font-family: 'Font Awesome 5 Brands';
 }
 /**
- * Base style to affect HTML elements on a general scale.
+ * Internal self contained modules, save in directory module/.
  */
-/**
- * Base style to affect HTML elements on a general scale.
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
  */
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
 html {
-  overflow-y: scroll;
   background-color: grey;
 }
 body {
-  margin: 0;
-  padding: 0;
-  color: #333;
+  background-color: white;
+}
+.site-logo {
+  display: none;
+}
+.wrap-all {
+  max-width: 2000px;
+  margin: 0 auto;
   background-color: grey;
-  font: 100.01%/1 serif;
 }
-img {
-  max-width: 100%;
+.footer-column {
+  width: 33%;
+  float: left;
+}
+.region-flash img {
+  width: 1500px;
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
+ * Style for the stylechooser.
  */
 /**
  * Variables
  */
 /**
- * General layout
+ * Style
  */
-.inner-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  background-color: grey;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.site-logo-text-icon,
-.site-logo-text,
-.site-logo {
-  display: none;
-}
-.my-navbar {
-  list-style-type: none;
-  text-align: center;
-  padding-top: 1em;
-  margin-bottom: 1em;
-}
-.my-navbar li {
-  display: inline;
-  padding: 0 10px;
-  /* border-style: ridge; */
-  font-family: sans-serif;
-}
-.my-navbar :hover {
-  color: blue;
-}
-.route {
-  height: 100%;
-}
-.region-flash img {
-  margin-left: -5em;
-}
-.article h1 {
-  text-align: center;
-}
-.right {
-  /* margin-left: 10em; */
-  float: left;
-  padding: 2em;
-}
-.article {
-  padding: 2em;
-}
-.region-main.has-sidebar-left {
-  display: inline;
-  float: right;
-  width: 65.625%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 4.6875%;
-  padding-bottom: 5em;
-}
-.next {
-  float: right;
-}
-.toc {
-  float: left;
-  list-style-type: none;
-}
-.region-sidebar-right {
-  float: left;
-  width: 30%;
-}
-.author-byline {
-  border: 1px solid #ccc;
-  margin-bottom: 46px;
-  padding: 1em;
-  float: left;
-  margin-top: -2em;
-  margin-left: 2em;
-}
-.region-footer {
-  padding-top: -2em;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: darkgrey;
-  color: white;
-  text-align: center;
-  border-top: solid;
-  color: black;
-}
-.footer-column {
-  display: inline;
-  float: left;
-  width: 32.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  bottom: 0;
-}
-/**
- * Layout for responsive style through media queries.
- */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
-  }
-}
-/**
- * Example on media queries
- */
-/**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
-}
 /**
  * A responsive menu.
  */
@@ -5137,23 +5003,100 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   right: 0;
 }
 /**
- * Style for responsive menu
+ * Base style to affect HTML elements on a general scale.
  */
 /**
-  * Example on media queries
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #333;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: white;
+  font: 100.01%/1 serif;
+}
+img {
+  max-width: 100%;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+  * Header layout
   */
-@media screen and (max-width: 680px) {
-  .rm-small {
-    display: block;
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
   }
+}
+/**
+* Navbar
+ */
+@media screen and (max-width: 960px) {
+  .rm-desktop {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .region-header-col-1,
+  .region-header-col-3 {
+    width: 15%;
+  }
+  .region-header-col-2 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
   .rm-desktop {
     display: none;
   }
 }
-@media screen and (min-width: 680px) {
-  .rm-small {
-    display: none;
-  }
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
 }
 /**
  * My own settings, not currently in their own module.

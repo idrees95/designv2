@@ -12,7 +12,7 @@ views:
         region: flash
         template: anax/v2/image/default
         data:
-            src: "image/flashimg.jpg??width=1400&amp;height=200&amp;crop-to-fit"
+            src: "image/flashimg.jpg??width=2000&amp;height=200&amp;crop-to-fit"
     byline:
         region: main
         template: anax/v2/block/default

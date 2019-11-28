@@ -1,0 +1,144 @@
+/**
+*Layout using vgrid
+
+/**
+*variables
+/**
+* General Layout
+*/
+.row {
+    #desinax-vgrid.row();
+    margin-bottom: 12px;
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+    background-color: white;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+.site-logo {
+    border-style: none;
+}
+
+
+
+
+
+// .inner-wrap-header,
+// .inner-wrap-footer {
+//     #desinax-vgrid.grid(100%);
+// }
+
+
+ /**
+  * Header layout
+  */
+.outer-wrap-header {
+    // overflow: hidden;
+    // .clearfix();
+}
+
+ .inner-wrap-header {
+     background-color: darkblue;
+      // max-width: 100%;
+ }
+
+// .region-header-col-3
+.region-header-col-1 {
+    #desinax-vgrid.column(5);
+    // width: 20%;
+    // float: left;
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(14);
+    text-align: center;
+    // float: left;
+    // width: 60%;
+    // overflow: auto;
+}
+
+.region-fa {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+/**
+* Main and sidebars layout
+*/
+
+
+
+.inner-wrap-main {
+    // overflow: auto;
+}
+
+.region-main {
+    #desinax-vgrid.column(18);
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(6);
+}
+
+.region-main {
+}
+
+
+
+/**
+* responsive 1, 2, 3
+*/
+@media screen and (max-width: 1000px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .region-main.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+}
+
+
+
+
+/**
+* Footer layout
+*/
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+}
+
+.inner-wrap-footer,
+.outer-wrap-footer {
+     background-color: #333;
+     color: white;
+}
