@@ -20,8 +20,12 @@ return [
             "stylesheets" => [
                 // Change here to set another default stylesheet
                 // "css/dbwebb-se.min.css",
+<<<<<<< HEAD
                 // "css/kmom01.css",
                 "css/kmom02.css",
+=======
+                "css/kmom01.css",
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
@@ -45,7 +49,11 @@ return [
             "template" => "anax/v2/header/site_logo_text",
             "data" => [
                 "homeLink"      => "",
+<<<<<<< HEAD
                 "siteLogoText"  => "Idrees Safi",
+=======
+                "siteLogoText"  => "design",
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
                 "siteLogoTextIcon" => "image/theme/leaf_40x40.png",
                 "siteLogoTextIconAlt" => "Löv-bild",
             ],
@@ -73,7 +81,10 @@ return [
                     [
                         "template" => "anax/v2/block/default",
                         "contentRoute" => "block/footer-col-1",
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
                     ],
                     [
                         "template" => "anax/v2/block/default",

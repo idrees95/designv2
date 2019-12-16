@@ -1,6 +1,7 @@
 /** --------------------------------------------------------------
  * Figure through .figure
  */
+<<<<<<< HEAD
 @magicNumber: 24px;
 
 #desinax-figure {
@@ -9,6 +10,14 @@
         padding: 0;
         margin: 0;
         margin-bottom: @magicNumber;
+=======
+#desinax-figure {
+    .figure() {
+        display: table;
+        padding: 0;
+        margin: 0;
+        //margin-bottom: @magicNumber - 4px;
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
 
         img {
             max-width: 100%; // Make images responsive
@@ -18,11 +27,18 @@
         figcaption {
             display: table-caption;
             caption-side: bottom;
+<<<<<<< HEAD
             padding-top: @magicNumber / 2;
 
             p {
                 margin-top: 0;
                 margin-bottom: 0;
+=======
+            //padding-top: @magicNumber / 2;
+
+            p {
+                margin-top: 0;
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
                 font-style: italic;
             }
         }
@@ -33,6 +49,19 @@
         }
 
         /* Position the images */
+<<<<<<< HEAD
+=======
+        &.left {
+            float: left;
+            margin-right: 8px;
+        }
+
+        &.right {
+            float: right;
+            margin-left: 8px;
+        }
+
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
         &.center {
             clear: both;
             margin: auto;
@@ -42,6 +71,7 @@
             }
         }
 
+<<<<<<< HEAD
         &.left {
             float: left;
             margin-right: 0.5em;
@@ -108,6 +138,47 @@
                             width: @maxContentWidth * 1 / 3;
                         }
                     }
+=======
+        @media screen {
+            @media (max-width: 600px) {
+                &.w50 {
+                    width: 300px;
+                }
+
+                &.w25 {
+                    width: 150px;
+                }
+            }
+
+            @media (max-width: 550px) {
+                &.w50 {
+                    width: 225px;
+                }
+            }
+
+            @media (max-width: 450px) {
+                &.w50 {
+                    width: 200px;
+                }
+            }
+
+            @media (max-width: 400px) {
+                &.w50 {
+                    width: 150px;
+                }
+            }
+
+            @media (max-width: 320px) {
+                &.w50 {
+                    min-width: 100%;
+                }
+
+                &.left,
+                &.right {
+                    float: none;
+                    margin-left: 0;
+                    margin-right: 0;
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
                 }
             }
         }

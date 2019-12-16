@@ -86,7 +86,11 @@ Next step is to activate all grid styles to the typographic elements, such as h1
 #desinax-hgrid.activateDefaultTypography();
 ```
 
+<<<<<<< HEAD
 The next step is to optionally enable the to show the grid. This is helpful when one want to check that the typography actually alines to the grid.
+=======
+The next step is to optionally enable the to show the grid. This is helpful when one want to check that the typpgraphy actually alines to the grid.
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
 
 ```less
 // Show the grid
@@ -96,6 +100,7 @@ The next step is to optionally enable the to show the grid. This is helpful when
 }
 ```
 
+<<<<<<< HEAD
 Or you can use the alternative `showGrid` that works more dynamiccaly, without a need of a background image.
 
 ```less
@@ -105,6 +110,8 @@ Or you can use the alternative `showGrid` that works more dynamiccaly, without a
 }
 ```
 
+=======
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
 Now you are done. An example showing how this can look like is in [`htdocs/typographic_default.html`](htdocs/typographic_default.html). The style used for the example is in [`src/less/test_typography_default.less`](src/less/test_typography_default.less).
 
 This is how the example looks like.

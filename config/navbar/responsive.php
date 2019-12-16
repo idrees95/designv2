@@ -7,7 +7,11 @@ return [
     "id" => "rm-menu",
     "wrapper" => null,
     "class" => "rm-default rm-mobile",
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
     // Here comes the menu items
     "items" => [
         [
@@ -49,10 +53,13 @@ return [
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
+<<<<<<< HEAD
         [
             "text" => "TestPage",
             "url" => "TestPage",
             "title" => "Get to know design",
         ],
+=======
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
     ],
 ];

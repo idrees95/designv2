@@ -1,0 +1,103 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+html {
+    background-color: #ccc;
+}
+/* .wrap-all {
+    background-color: #ccc;
+} */
+
+.outer-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inner-wrap-main {
+    padding: 10px 0;
+}
+
+.region-header-col-1 {
+    float: right;
+}
+
+.site-logo img {
+    opacity: 0.5;
+    margin-right: -10em;
+    display: none;
+}
+
+.my-navbar {
+    list-style-type: none;
+    margin-left: 20em;
+    /* margin-left: auto; */
+    margin-right: auto;
+}
+
+.my-navbar li {
+    display: inline;
+    padding: 1em;
+}
+
+.region-flash {
+    margin-left: 5em;
+    padding-top: 2em;
+}
+
+.region-flash img {
+    border-style: inset;
+}
+
+.region-main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author-byline {
+    margin-top: 2em;
+    padding: 0.5em;
+    width: 450px;
+    border-style: inset;
+}
+
+/* .wrap-sidebar {
+    float: right;
+    width: 30%;
+    margin-right: -5em;
+    margin-top: -60em;
+    border-style: ridge;
+} */
+
+.outer-wrap-footer {
+    background-color: #424242;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.inner-wrap-footer {
+    padding: 1em;
+}

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+---
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
 title: "Min fina titel"
 views:
     kursrepo:
@@ -21,7 +25,11 @@ views:
             meta:
                 type: single
                 route: block/byline
+<<<<<<< HEAD
 
+=======
+---
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
 Idrees Safi | Testsida
 =========================
 My new test page

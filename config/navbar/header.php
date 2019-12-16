@@ -30,6 +30,7 @@ return [
                         "url" => "redovisning/kmom02",
                         "title" => "Redovisning för kmom02.",
                     ],
+<<<<<<< HEAD
                     [
                         "text" => "Kmom03",
                         "url" => "redovisning/kmom03",
@@ -40,6 +41,8 @@ return [
                         "url" => "redovisning/kmom04",
                         "title" => "Redovisning för kmom04.",
                     ],
+=======
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
                 ],
             ],
         ],
@@ -59,6 +62,7 @@ return [
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
         [
+<<<<<<< HEAD
             "text" => "TestPage",
             "url" => "TestPage",
             "title" => "Get to know design",
@@ -68,5 +72,11 @@ return [
             "url" => "rapport",
             "title" => "Reports.",
         ]
+=======
+            "text" => "Test Page",
+            "url" => "test",
+            "title" => "Get to know the constructions.",
+        ],
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
     ],
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*!
  * Stylesheet for design kmom01.
  *
@@ -37,3 +38,134 @@ body {
     margin: 0 auto;
     background-color: yellow;
 } */
+=======
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+html {
+    background-color: darkgrey;
+}
+
+.wrap-all {
+    background-color: darkgrey;
+}
+
+.region-main, .region-sidebar-right {
+    border: 1px solid
+    #000;
+    border-radius: 6px;
+    margin-bottom: 120px;
+    padding-bottom: 72px;
+}
+
+.inner-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color:
+    transparent;
+}
+
+.region-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
+    border-top: solid;
+    color: black;
+
+}
+
+.author-byline {
+    border: 1px inset #000;
+    border-radius: 5px;
+    padding: 2ex;
+    clear: both;
+    width: 500px;
+    margin-bottom: 10px;
+    margin-left: 190px;
+    margin-right: 290px;
+}
+
+.footer-column {
+    display: inline;
+    float: left;
+    width: 32.29166667%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+    bottom: 0;
+}
+
+.site-logo {
+    opacity: 0.3;
+    float: right;
+    margin-right: -15em;
+}
+
+.site-logo-text {
+    display: none;
+}
+
+.my-navbar {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.my-navbar li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.my-navbar :hover {
+    color: blue;
+}
+
+.region-flash img {
+    margin: 2em;
+    margin-top: -8em;
+    border-radius: 10%;
+}
+
+.article img {
+    border-style: inset;
+    border-color: silver;
+}
+
+.has-sidebar {
+    border-style: inset;
+}
+
+.has-sidebar li:hover {
+    color: yellow;
+}
+
+div.block.tock {
+    width: 30%;
+}
+
+.article {
+    padding: 1em;
+}
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a

@@ -24,4 +24,7 @@ return [
         "title" => "About this site.",
     ]
 ];
+<<<<<<< HEAD
 ];
+=======
+>>>>>>> 3bed6d5faf9db681aaec8cc4d6772db173eeef5a
