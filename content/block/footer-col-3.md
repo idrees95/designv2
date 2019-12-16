@@ -1,3 +1,3 @@
-#### Footer col 3
+#### UNICORN
 
-UNICORN VALIDATOR: [VALIDATOR](https://validator.w3.org/)
+VALIDATOR: [VALIDATOR](https://validator.w3.org/)

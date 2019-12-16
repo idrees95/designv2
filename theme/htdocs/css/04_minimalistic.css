@@ -1,7 +1,7 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
+ * LESS version of the stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03. Its intention is to
+ * This stylesheet is for the design course and kmom04. Its intention is to
  * use kmom01.css and lessify the style and use this as a wrapper for the new
  * style.
  */
@@ -4733,38 +4733,6 @@ template {
 /**
  * Internal self contained modules, save in directory module/.
  */
-/*!
- * Stylesheet for design kmom01.
- *
- * This stylesheet is for the design course and kmom01. Fill it with style
- * to style up the website so it is useable.
- */
-/* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-html {
-  background-color: grey;
-}
-body {
-  background-color: white;
-}
-.site-logo {
-  display: none;
-}
-.wrap-all {
-  max-width: 2000px;
-  margin: 0 auto;
-  background-color: grey;
-}
-.footer-column {
-  width: 33%;
-  float: left;
-}
-.region-flash img {
-  width: 1500px;
-}
 /**
  * Style for the stylechooser.
  */
@@ -5002,6 +4970,16 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
 }
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoKmNg.ttf) format('truetype');
+}
+body {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+}
 /**
  * Import the typographic grid.
  */
@@ -5039,7 +5017,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 .hgrid .inner-wrap {
-  background-image: url("../img/magic-number-22px.png");
+  background-image: url("../img/magic-number-24px.png");
 }
 /**
  * Base style to affect HTML elements on a general scale.
@@ -5049,18 +5027,18 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #333;
+  background-color: yellow;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: white;
-  font: 16px/1.375 "sans-serif";
+  color: green;
+  background-color: red;
+  font: 16px/1.5 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
   overflow-x: hidden;
 }
 img {
-  max-width: 99%;
+  max-width: 100%;
 }
 h1,
 h2,
@@ -5069,8 +5047,8 @@ h4,
 h5,
 h6 {
   font-family: MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 h1 img,
 h2 img,
@@ -5082,10 +5060,10 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.15789474;
+  line-height: 1.26315789;
   font-weight: normal;
   border-bottom: 1px solid #666;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 h1 ~ h1,
 h1 ~ h2,
@@ -5093,58 +5071,58 @@ h1 ~ h3,
 h1 ~ h4,
 h1 ~ h5,
 h1 ~ h6 {
-  margin-top: 44px;
+  margin-top: 48px;
 }
 h1 + h2 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.46666667;
+  line-height: 1.6;
   font-weight: normal;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   border-bottom: 1px solid #CCC;
 }
 h2 + h3 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.57142857;
+  line-height: 1.71428571;
   font-weight: normal;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 h3 + h4 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1.83333333;
+  line-height: 1;
   font-weight: normal;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 h4 + h5 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.1;
-  margin-bottom: 21px;
+  line-height: 1.2;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 h5 + h6 {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.1;
-  margin-bottom: 21px;
+  line-height: 1.2;
+  margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
 }
 p {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 small,
 .small,
@@ -5185,14 +5163,14 @@ blockquote {
   border-left: 4px solid #eee;
   padding-left: 1em;
   margin-left: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 pre,
 code,
 kbd,
 samp,
 .code {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "monospace";
 }
 code,
 samp {
@@ -5211,7 +5189,7 @@ pre code {
   white-space: pre;
 }
 pre {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 pre code {
   display: block;
@@ -5221,21 +5199,21 @@ div.code,
 pre code {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 21px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 0.5em;
   background-color: #eee;
 }
 ul,
 ol {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding-left: 1.5em;
 }
 ul p,
 ol p {
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 ul ul,
 ol ul,
@@ -5250,7 +5228,7 @@ ol {
   list-style-type: decimal;
 }
 dl {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 dl.horizontal dt {
   clear: left;
@@ -5268,7 +5246,7 @@ article table,
 .table,
 .table1,
 .table2 {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 table.full-width,
 article .table,
@@ -5289,7 +5267,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.57142857;
+  line-height: 1.71428571;
   text-align: left;
   font-style: italic;
 }
@@ -5311,7 +5289,7 @@ article table th,
 article table td,
 .table td,
 .table2 td {
-  padding: 5.5px;
+  padding: 6px;
 }
 article table tr,
 .table tr,
@@ -5335,8 +5313,8 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-top: 32px;
-  margin-bottom: 33px;
+  margin-top: 35px;
+  margin-bottom: 36px;
 }
 hr::after {
   content: "§";
@@ -5386,6 +5364,18 @@ hr::after {
 /**
 * General Layout
 */
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+  margin-bottom: 12px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .inner-wrap {
   margin-right: auto;
   margin-left: auto;
@@ -5424,20 +5414,14 @@ hr::after {
   color: White;
 }
 .region-flash img {
-  padding-top: 65px;
   margin-left: 5px;
   margin-bottom: -7px;
-  box-shadow: 25px 25px 50px 0 grey inset, -25px -25px 50px 0 grey inset;
-  width: px;
-  height: 250px;
 }
 /**
   * Header layout
   */
 .inner-wrap-header {
   background-color: rgba(0, 0, 0, 0.5);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 .region-header-col-1 {
   display: inline;
@@ -5523,26 +5507,6 @@ h4 {
     margin-left: 0.52083333%;
   }
 }
-/* redovisningstext länkar*/
-ul.toc {
-  border-style: solid;
-}
-.author-byline {
-  border-style: outset;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-.author-byline figcaption {
-  display: none;
-}
-.author-byline p {
-  width: 84%;
-  float: right;
-  margin-top: -104px;
-}
-.next {
-  float: right;
-}
 /**
 * Footer layout
 */
@@ -5552,6 +5516,7 @@ ul.toc {
   width: 32.29166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  bottom: 0;
 }
 .site-footer {
   display: inline;
@@ -5560,24 +5525,10 @@ ul.toc {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .inner-wrap-footer,
 .outer-wrap-footer {
+  background-color: #333;
   color: white;
-  background-image: linear-gradient(grey, black);
-}
-.site-footer {
-  text-align: center;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer

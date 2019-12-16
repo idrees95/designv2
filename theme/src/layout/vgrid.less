@@ -6,18 +6,18 @@
 /**
 * General Layout
 */
-.row {
-    #desinax-vgrid.row();
-    margin-bottom: 12px;
-}
 
+@bodycolor: white;
 .inner-wrap {
     #desinax-vgrid.grid(1100px);
-    background-color: white;
+    background-color: @bodycolor;
 }
 
 .inner-wrap-header {
     #desinax-vgrid.grid(100%);
+    text-shadow: 8px 15px 3px rgba(0,0,0,0.65);
+    color: White;
+
 }
 
 .vgrid .inner-wrap {
@@ -31,18 +31,22 @@
 }
 
 .site-logo {
-    border-style: none;
+    display: none;
 }
 
+.site-logo-text a {
+    color: White;
+}
 
-
-
-
-// .inner-wrap-header,
-// .inner-wrap-footer {
-//     #desinax-vgrid.grid(100%);
-// }
-
+.region-flash img {
+    padding-top: 65px;
+    margin-left: 5px;
+    margin-bottom: -7px;
+    // box-shadow: 0 0 12px 12px black inset;
+    box-shadow: 25px 25px 50px 0 grey inset, -25px -25px 50px 0 grey inset;
+    width: px;
+    height: 250px;
+}
 
  /**
   * Header layout
@@ -53,7 +57,10 @@
 }
 
  .inner-wrap-header {
-     background-color: darkblue;
+     background-color: rgba(0, 0, 0, 0.5);
+     // background-image: url("../img/flashimg.jpg");
+     background-repeat: no-repeat;
+     background-size: 100%;
       // max-width: 100%;
  }
 
@@ -83,13 +90,6 @@
 /**
 * Main and sidebars layout
 */
-
-
-
-.inner-wrap-main {
-    // overflow: auto;
-}
-
 .region-main {
     #desinax-vgrid.column(18);
 }
@@ -102,7 +102,19 @@
 .region-main {
 }
 
+@rubrik: monaco;
+@fonttext: 'Vibes', cursive;
 
+p {
+    font-style: @fonttext;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-style: @rubrik;
+}
 
 /**
 * responsive 1, 2, 3
@@ -123,7 +135,31 @@
     }
 }
 
+/* redovisningstext länkar*/
 
+ul.toc {
+    border-style: solid;
+}
+
+.author-byline {
+    border-style: outset;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.author-byline figcaption  {
+    display: none;
+}
+
+.author-byline p {
+    width: 84%;
+    float: right;
+    margin-top: -104px;
+}
+
+.next {
+    float: right;
+}
 
 
 /**
@@ -137,8 +173,20 @@
     #desinax-vgrid.column(@columns);
 }
 
+@footercolor: linear-gradient(grey, black);
+.row {
+    #desinax-vgrid.row();
+    // margin-bottom: 2px;
+}
+
 .inner-wrap-footer,
 .outer-wrap-footer {
-     background-color: #333;
+     // background-color: #333;
      color: white;
+     // background-image: linear-gradient(grey, black);
+     background-image: @footercolor;
+}
+
+.site-footer {
+    text-align: center;
 }

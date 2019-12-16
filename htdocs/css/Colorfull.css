@@ -1,7 +1,7 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
+ * LESS version of the stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03. Its intention is to
+ * This stylesheet is for the design course and kmom04. Its intention is to
  * use kmom01.css and lessify the style and use this as a wrapper for the new
  * style.
  */
@@ -4733,38 +4733,6 @@ template {
 /**
  * Internal self contained modules, save in directory module/.
  */
-/*!
- * Stylesheet for design kmom01.
- *
- * This stylesheet is for the design course and kmom01. Fill it with style
- * to style up the website so it is useable.
- */
-/* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-html {
-  background-color: grey;
-}
-body {
-  background-color: white;
-}
-.site-logo {
-  display: none;
-}
-.wrap-all {
-  max-width: 2000px;
-  margin: 0 auto;
-  background-color: grey;
-}
-.footer-column {
-  width: 33%;
-  float: left;
-}
-.region-flash img {
-  width: 1500px;
-}
 /**
  * Style for the stylechooser.
  */
@@ -5054,9 +5022,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: white;
-  font: 16px/1.375 "sans-serif";
+  color: brown;
+  background-color: green;
+  font: 16px/1.375 monospace;
   overflow-x: hidden;
 }
 img {
@@ -5068,7 +5036,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+  font-family: "serif";
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -5574,7 +5542,7 @@ ul.toc {
 .inner-wrap-footer,
 .outer-wrap-footer {
   color: white;
-  background-image: linear-gradient(grey, black);
+  background-image: linear-gradient(black, green);
 }
 .site-footer {
   text-align: center;
@@ -5648,3 +5616,8 @@ ul.toc {
 /**
  * My own settings, not currently in their own module.
  */
+.inner-wrap-footer,
+.outer-wrap-footer {
+  background-color: #333;
+  color: red;
+}

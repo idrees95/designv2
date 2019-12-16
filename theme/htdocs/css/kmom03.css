@@ -5056,11 +5056,11 @@ body {
   padding: 0;
   color: #333;
   background-color: white;
-  font: 16px/1.375 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font: 16px/1.375 "sans-serif";
   overflow-x: hidden;
 }
 img {
-  max-width: 100%;
+  max-width: 99%;
 }
 h1,
 h2,
@@ -5386,18 +5386,6 @@ hr::after {
 /**
 * General Layout
 */
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-  margin-bottom: 12px;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .inner-wrap {
   margin-right: auto;
   margin-left: auto;
@@ -5408,6 +5396,8 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
+  text-shadow: 8px 15px 3px rgba(0, 0, 0, 0.65);
+  color: White;
 }
 .vgrid .inner-wrap {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
@@ -5428,13 +5418,26 @@ hr::after {
   }
 }
 .site-logo {
-  border-style: none;
+  display: none;
+}
+.site-logo-text a {
+  color: White;
+}
+.region-flash img {
+  padding-top: 65px;
+  margin-left: 5px;
+  margin-bottom: -7px;
+  box-shadow: 25px 25px 50px 0 grey inset, -25px -25px 50px 0 grey inset;
+  width: px;
+  height: 250px;
 }
 /**
   * Header layout
   */
 .inner-wrap-header {
-  background-color: darkblue;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .region-header-col-1 {
   display: inline;
@@ -5483,6 +5486,15 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+p {
+  font-style: 'Vibes', cursive;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-style: monaco;
+}
 /**
 * responsive 1, 2, 3
 */
@@ -5511,6 +5523,26 @@ hr::after {
     margin-left: 0.52083333%;
   }
 }
+/* redovisningstext länkar*/
+ul.toc {
+  border-style: solid;
+}
+.author-byline {
+  border-style: outset;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.author-byline figcaption {
+  display: none;
+}
+.author-byline p {
+  width: 84%;
+  float: right;
+  margin-top: -104px;
+}
+.next {
+  float: right;
+}
 /**
 * Footer layout
 */
@@ -5528,10 +5560,24 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .inner-wrap-footer,
 .outer-wrap-footer {
-  background-color: #333;
   color: white;
+  background-image: linear-gradient(grey, black);
+}
+.site-footer {
+  text-align: center;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer

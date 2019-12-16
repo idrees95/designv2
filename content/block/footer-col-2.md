@@ -1,3 +1,3 @@
-#### Footer col 2
+#### CSS
 
-CSS VALIDATOR: [VALIDATOR](https://validator.w3.org/)
+VALIDATOR: [VALIDATOR](https://validator.w3.org/)

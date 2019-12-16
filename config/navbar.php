@@ -24,3 +24,4 @@ return [
         "title" => "About this site.",
     ]
 ];
+];

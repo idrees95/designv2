@@ -1,2 +1,2 @@
-#### Footer col 1
-HTML VALIDATOR: [VALIDATOR](https://validator.w3.org/)
+### HTML
+VALIDATOR: [VALIDATOR](https://validator.w3.org/)
